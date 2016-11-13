@@ -3,46 +3,46 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Техномарт</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> 
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
 		<header class="header">
 			<div class="header-top">
 				<div class="container">
-					<a class="logo" href="#"><img src="img/logo.png" width="220" height="42" alt="Техномарт"></a>
-					<form class="search" action="https://echo.htmlacademy.ru" method="post">
-						<input type="text" name="search" placeholder="Поиск">
-						<label></label> 
+					<a class="logo" href="#"></a>
+					<form class="search clearfix" action="https://echo.htmlacademy.ru" method="post">						
+						<input type="text" name="search" id="search" placeholder="Поиск">						 
+						<label for="search"></label>
 					</form>
-					<a class="favorite" href="#">Закладки:0</a>
-					<a class="cart" href="#">Корзина:0</a>
-					<a class="checkout" href="#">Оформить заказ</a>
+					<div class="mini-menu">
+						<a class="favorite" href="#"><span>Закладки: 0</span></a>
+						<a class="cart" href="#"><span>Корзина: 0</span></a>
+						<a class="checkout" href="#"><span>Оформить заказ</span></a>
+					</div>
 				</div>
 			</div>
 			<div class="header-bottom">
-				<div class="container">
+				<div class="container clearfix">
 					<div class="info">
-						<p>Интернет-магазин строительных материалов и инструментов для ремонта
-						</p>
+						Интернет-магазин строительных материалов и инструментов для ремонта
 					</div>
 					<div class="adress">
 						<p class="phone-1">+7 (812) 555-05-55</p>
 						<p class="adress-1">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 					</div>
 					<div class="user">
-						<a class="btn-user btn-enter" href="#">Войти</a>
+						<a class="btn-user  btn-enter" href="#">Войти</a>
 						<a class="btn-user" href="#">Регистрация</a>
 					</div>
 					<nav class="header-menu">
-						<ul>
-							<li><a href="#">Главная</a></li>
-							<li><a href="#">Компания</a></li>
-							<li><a href="#">Каталог</a></li>
-							<li><a href="#">Новости</a></li>
-							<li><a href="#">Спецпредложения</a></li>
-							<li><a href="#">Доставка</a></li>
-							<li><a href="#">Контакты</a></li>
-						</ul> 
+						<a href="#">Главная</a>
+						<a href="#">Компания</a>
+						<a href="#">Каталог</a>
+						<a href="#">Новости</a>
+						<a href="#">Спецпредложения</a>
+						<a href="#">Доставка</a>
+						<a href="#">Контакты</a>
 					</nav>
 				</div>
 			</div>
@@ -50,7 +50,7 @@
 		<main class="content">
 			<div class="container">
 				<section class="promo clearfix">
-					<div class="promo-item materials">
+					<div class="promo-item materials promo-new">
 						<span>Материалы</span>
 						<a class="nav-a" href="#">На любой вкус</a>
 					</div>
@@ -63,27 +63,35 @@
 						<a class="nav-a" href="#">Для стройки</a>
 					</div> 
 					<div class="slide">
-						<input type="radio" id="btn-1" name="toggle">
-						<input type="radio" id="btn-2" name="toggle" checked>
+						<input type="radio" id="btn-1" name="toggle" checked>
+						<input type="radio" id="btn-2" name="toggle">
+						<input type="radio" id="btn-3" name="toggle">
 						<div class="index-slider-controls">
 							<label for="btn-1"></label>
 							<label for="btn-2"></label>
+							<label for="btn-3"></label>
 						</div>
 						<div class="index-slides">
-							<div class="index-slide">
+							<div class="index-slide slide1">
 								<div class="index-slider-title">Перфораторы</div>
 								<div class="index-slider-caption">Настоящие мужские игрушки</div>
 								<a class="index-slider-btn red-btn" href="catalog.html">Открыть каталог</a>
 							</div>
-							<div class="index-slide">
+							<div class="index-slide slide2">
+								<div class="index-slider-title">Дрели</div>
+								<div class="index-slider-caption">Соседям на радость!</div>
+								<a class="index-slider-btn red-btn" href="#">Открыть каталог</a>
+							</div>
+							<div class="index-slide slide3">
 								<div class="index-slider-title">Дрели</div>
 								<div class="index-slider-caption">Соседям на радость!</div>
 								<a class="index-slider-btn red-btn" href="#">Открыть каталог</a>
 							</div>
 						</div>
 						<div class="index-slider-arrow">
-							<label class="arrow-left icon-left" for="btn-1"></label>
-							<label class="arrow-right icon-right" for="btn-2"></label>
+							<label class="arrow" for="btn-1"></label>
+							<label class="arrow" for="btn-2"></label>
+							<label class="arrow" for="btn-3"></label>
 						</div>
 					</div>
 					<div class="promo-item discount">
@@ -137,12 +145,12 @@
 							<div class="old-price-fav">30500P.</div>
 							<a class="price-fav">25500P.</a>
 						</article>
-						<article class="box-fav new-fav">
+						<article class="box-fav promo-new">
 							<div class="box-fav-img">
 								<img class="pic-fav" src="img/good4.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
 							</div>
 							<div class="btn-box">
-								<a class="btn-buy"href="#">КУПИТЬ</a>
+								<a class="btn-buy" href="#">КУПИТЬ</a>
 								<a class="btn-bookmark" href="#">В закладки</a>
 							</div>
 							<a  class="name-fav" href="#">Перфоратор BOSCH BFG 2000</a>
@@ -236,7 +244,7 @@
 							Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.
 						</p>
 						<p class="p-desc">
-							Мы можем доставить ваш товар в самые отдаленные точки России!
+							Мы можем доставить ваш товар в самые отдаленные точки России!<br>  
 							Техномарт работает со многими транспортными компаниями: 
 						</p>
 						<ul class="about-list">
@@ -248,15 +256,17 @@
 					</div>
 					<div class="contacts">
 						<h2 class="sub-title">Контакты</h2>
-						<p>Вы можете забрать товар сами,заехав в наш офис:</p>
+						<p>Вы можете забрать товар сами,<br>
+							заехав в наш офис:</p>
 						<a class="map" href="#">
 							<img src="img/map.png" width="300" height="158" alt="карта">
 						</a>
 						<div class="pop-up-maps">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13203.094747822623!2d37.61894237050108!3d55.74409055068033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afde0ba2715%3A0x8c4555d024e8c518!2z0KLRgNC10YLRjNGP0LrQvtCy0YHQutCw0Y8!5e0!3m2!1sru!2sru!4v1477478942902" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13203.094747822623!2d37.61894237050108!3d55.74409055068033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54afde0ba2715%3A0x8c4555d024e8c518!2z0KLRgNC10YLRjNGP0LrQvtCy0YHQutCw0Y8!5e0!3m2!1sru!2sru!4v1477478942902" width="940" height="446" frameborder="0" style="border:0" allowfullscreen></iframe>
 						</div>
 						<a class="btn" href="#">Заблудились? Напишите нам!</a>
 						<div class="write-us">
+							<a class="close" href="#"></a>
 							<form class="wtite-us-form" action="//echo.htmlacademy.ru" method="post">
 								<div class="write-us-input clearfix">
 									<div class="write-us-name">
@@ -285,7 +295,7 @@
 			<div class="footer-top clearfix">
 				<div class="container">
 					<div class="footer-left">
-						<a class="logo-footer" href="#"><img src="img/logo-footer.png" width="220" height="68" alt="Техномарт"></a>
+						<a class="logo-footer" href="#"></a>
 						<div class="footer-adress">
 							г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
 							+7 (812) 555-05-55
@@ -311,7 +321,7 @@
 			<div class="footer-bottom">
 				<div class="container clearfix">
 					<section class="copyright">
-						© 2010–2016 Компания «Техномарт»<br>
+						© 2010–2016 Компания«Техномарт»<br>
 						Все права защищены
 					</section>
 					<section class="footer-social">
@@ -320,7 +330,7 @@
 						<a class="social-btn social-btn-inst" href="#"></a>
 					</section>
 					<section class="footer-def">
-						Разработано:
+						Разработано -
 						<a class="footer-btn" href="https://htmlacademy.ru">htmlacademy.ru</a>
 					</section>
 					<section class="footer-feedback">
