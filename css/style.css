@@ -49,6 +49,9 @@ h2 {
     line-height: 30px;
     color: #32425c;
 }
+input, button{
+	outline: none;
+}
 a {
     text-decoration: none;
 }
@@ -745,8 +748,8 @@ a.checkout:active {
     text-align: center;
     padding: 43px 42px 46px 41px;
     position: absolute;
-    top: 1px;
-    left: 1px;
+    top: 0px;
+    left: 0px;
     width: 218px;
     height: 173px;
     -moz-box-sizing: border-box;
