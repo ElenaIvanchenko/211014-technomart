@@ -304,6 +304,7 @@ a.checkout:active {
 .user-nickname:before {
     content: " ";
     display: inline-block;
+	  vertical-align: top;
     width: 20px;
     height: 18px;
     position: relative;
@@ -316,6 +317,7 @@ a.checkout:active {
 }
 .user-log-out {
     display: inline-block;
+	  vertical-align: top;
     width: 20px;
     height: 18px;
     position: absolute;
@@ -471,6 +473,7 @@ a.checkout:active {
 }
 .promo-item>span {
     display: inline-block;
+	  vertical-align: top;
     font-size: 24px;
     font-weight: bold;
     padding-left: 23px;
@@ -538,6 +541,7 @@ a.checkout:active {
 }
 .slide .index-slider-controls label {
     display: inline-block;
+	  vertical-align: top;
     width: 6px;
     height: 6px;
     left: 20px;
@@ -659,6 +663,7 @@ a.checkout:active {
 }
 .red-btn {
     display: inline-block;
+	  vertical-align: top;
     width: 195px;
     line-height: 14px;
     -webkit-border-radius: 3px;
@@ -860,6 +865,7 @@ a.checkout:active {
 .price-fav:after {
     content: "";
     display: inline-block;
+	  vertical-align: top;
     border: 19px solid #ffffff;
     border-right-width: 0;
     border-left-color: #ee3643;
@@ -955,9 +961,9 @@ a.checkout:active {
 .service-feature-item:hover {
     background-color: #293449;
 }
-#feature-1:checked ~ .service-slider-controls > .service-feature-item[for$='1'],
-#feature-2:checked ~ .service-slider-controls > .service-feature-item[for$='2'],
-#feature-3:checked ~ .service-slider-controls > .service-feature-item[for$='3'] {
+#feature-1:checked ~ .service-slider-controls > .service-feature-item[for$="1"],
+#feature-2:checked ~ .service-slider-controls > .service-feature-item[for$="2"],
+#feature-3:checked ~ .service-slider-controls > .service-feature-item[for$="3"] {
     background-color: #fff;
     color: #32425c;
     border-bottom: 1px solid #fff;
@@ -1215,6 +1221,7 @@ a.checkout:active {
 }
 .price-controls label {
     display: inline-block;
+	  vertical-align: top;
     width: 95px;
     height: 38px;
     background-color: #f7f3ec;
@@ -1256,6 +1263,7 @@ a.checkout:active {
 }
 .filter-group li {
     display: inline-block;
+	  vertical-align: top;
     width: 220px;
     height: 23px;
     list-style-type: none;
@@ -1490,6 +1498,7 @@ a.delta {
 }
 .logo-footer {
     display: inline-block;
+	  vertical-align: top;
     width: 220px;
     height: 63px;
     background-color: #ee3643;
@@ -1579,6 +1588,7 @@ a.delta {
 }
 .social-btn {
     display: inline-block;
+	  vertical-align: top;
     width: 40px;
     height: 40px;
     -webkit-border-radius: 50%;
@@ -1702,6 +1712,7 @@ div.modal-show {
     color: #fff;
     text-transform: uppercase;
     display: inline-block;
+	  vertical-align: top;
     margin-right: 20px;
 }
 .pop-up-btn-box .btn {
@@ -1715,6 +1726,7 @@ div.modal-show {
     line-height: 38px;
     font-size: 14px;
     display: inline-block;
+	  vertical-align: top;
     text-align: center;
     color: #000;
     text-transform: uppercase;
@@ -1732,6 +1744,11 @@ div.modal-show {
     height: 446px;
     -webkit-box-shadow: 0px 0px 14.72px 1.28px rgba(35, 31, 32, 0.5);
     box-shadow: 0px 0px 14.72px 1.28px rgba(35, 31, 32, 0.5);
+}
+.pop-up-maps iframe{
+	  width: 100%;
+	  height: auto;
+	  border: 0;
 }
 /*-------------Write-us--------------*/
 
