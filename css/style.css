@@ -1407,7 +1407,7 @@ a.link-active {
 }
 a.link-active:hover {
     color: #000;
-    border-bottom: 1px dotted #ee3643;
+    border-bottom: 1px solid #ee3643;
 }
 a.link-active:active {
     color: #ee3643;
@@ -1767,7 +1767,7 @@ div.modal-show {
 }
 .pop-up-maps iframe{
 	  width: 100%;
-	  height: auto;
+	  height: 100%;
 	  border: 0;
 }
 /*-------------Write-us--------------*/
